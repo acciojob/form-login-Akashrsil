@@ -1,9 +1,9 @@
-function getFormvalue() {
-    //Write your code here
-	let name=document.querySelectorAll("#form1");
-	for( let i=0;i<name.length;i++)
-		{
-			alert(name[i].innerTEXT)
-}
+const name1 = document.getElementById("name");
+console.log(name1.value);
 
-}
+const surname1 = document.getElementById("surname");
+const btn = document.querySelector("button");
+
+btn.addEventListener("click", () => {
+    alert(`${name1.value} ${surname1.value} `);
+})
